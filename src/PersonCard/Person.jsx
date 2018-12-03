@@ -18,7 +18,6 @@ class Person extends Component {
   }
 
   componentDidMount() {
-    console.log("here");
     this.getPerson();
   }
 
@@ -57,7 +56,6 @@ class Person extends Component {
                 movies: movies.slice(0, 3)
               }
             },
-            () => console.log("state updated")
           );
         } else if (res.crew && res.crew.length !== 0) {
           movies = res.crew.map((m, i) => {
@@ -73,7 +71,6 @@ class Person extends Component {
                 movies: movies.slice(0, 3)
               }
             },
-            () => console.log("state updated")
           );
         } else {
           this.setState(
@@ -83,20 +80,16 @@ class Person extends Component {
                 movies
               }
             },
-            () => console.log("state updated")
           );
         }
       });
     Promise.all([fetch1, fetch2]);
-    console.log("fetch finished!");
   }
   render() {
-    // console.log(this.state)
     const { active } = this.state;
 
     if (this.state["person"] !== undefined) {
-      const { affiliation, name, bio, img, movies } = this.state.person; //from props
-      console.log(this.state.person);
+      const { affiliation, name, bio, img, movies } = this.state.person; 
       return (
         <div>
           <div className={"person-pop " + (active ? "person-pop-active" : "")}>
