@@ -11,7 +11,8 @@ class Person extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      person: undefined
+      person: undefined,
+      active: true,
     };
     this.togglePop = this.togglePop.bind(this);
     this.getPerson = this.getPerson.bind(this);
@@ -150,9 +151,6 @@ class Person extends Component {
                 )}
               </div>
             </div>
-            <button id="close" onClick={this.togglePop}>
-              +
-            </button>
           </div>
           {!active ? (
             <button id="closed" onClick={this.togglePop}>

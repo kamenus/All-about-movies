@@ -23,7 +23,6 @@ aside{
     font-weight: 500;
     margin-top: 5em;
     margin-left: 2.1em;
-    /* padding-top: 55px; */
     text-align: center;
     line-height: 40px;
     width:7%;
@@ -81,8 +80,8 @@ button#closed{
     color:white;
     bottom: 0;
     right: 0;
-    height: 300px;
-    width: 300px;
+    height: 30px;
+    width: 30px;
     margin-right: 25px;
     cursor: pointer;
     background-color: rgb(146, 146, 146);
