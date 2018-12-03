@@ -1,0 +1,14 @@
+.header {
+  margin: 5px 0 10px 0;
+  border-bottom: 1px solid #000;
+  display: flex;
+}
+
+.logoImg {
+  width: 75px;
+  height: 75px;
+}
+
+.searchPanel {
+  margin: 0 0 0 auto;
+}

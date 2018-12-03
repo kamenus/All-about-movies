@@ -1,0 +1,130 @@
+.person-pop{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.836);
+    color: rgb(70, 70, 70);
+    transition: all .3s ease-in-out;
+    font-size: 13px;
+}
+.person-pop-active{
+    height: 200px;
+}
+.person-pop-active:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+aside{
+    height: 40%;
+    flex-shrink: 4;
+    background-color: rgb(252, 245, 253);
+    font-weight: 500;
+    margin-top: 5em;
+    margin-left: 2.1em;
+    /* padding-top: 55px; */
+    text-align: center;
+    line-height: 40px;
+    width:7%;
+}
+.img-person{
+    height: 90%;
+    padding-top: 13px;
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 20%;
+    height: 100%;
+}
+.person-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;   
+    justify-content: center;
+    align-items: center;
+    width: 73%;
+    /* flex: 0 0 70%; */
+    height: 100%;
+}
+
+.col1>*{
+    line-height: 40px;
+}
+.col2>*{
+    line-height: 30px;
+}
+.col1, .col2{
+    flex: 0 0 50%;
+    width: 47%;
+    height: 100%;
+}
+
+button#close{
+    height: 20px;
+    margin: 10px 25px 10px 0px;
+    transform: rotateZ(45deg);
+    background: none;
+    border: none;
+    font-size: 23px;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+button#closed{
+    display: block;
+    position: fixed;
+    font-size: 23px;
+    color:white;
+    bottom: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    margin-right: 25px;
+    cursor: pointer;
+    background-color: rgb(146, 146, 146);
+    border: none;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+@media(max-width:850px){
+    .person-pop-active{
+        height: 170px;
+    }
+    aside{
+        width: 0!important;
+        display: none;
+    }
+    .image-container{
+        width: 20%!important
+    }
+    .person-info{
+        width: 80%!important;
+    }
+}
+@media(max-width:650px){
+    .person-pop-active{
+        height: 140px;
+    }
+    .image-container{
+        width: 20%!important;
+    }
+    img{
+        max-height: 140px;
+    }
+    .person-info{
+        width: 80%!important;
+    }
+    .col1{
+        width: 100%!important;
+    }
+    .col2{
+        width: 0!important;
+        display: none;
+    }
+}

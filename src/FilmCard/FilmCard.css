@@ -1,0 +1,17 @@
+.film-card {
+  width: 800px;
+  height: auto;
+  display: flex;
+  box-shadow: 0 10px 20px #6EA5DC;
+  background-color: rgb(197, 217, 223);
+  margin: 100px auto 0;
+}
+
+.info-card {
+  padding: 12px 12px 24px 24px;
+  text-align: center;
+}
+
+.description-film {
+  text-align: left;
+}

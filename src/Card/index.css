@@ -1,0 +1,26 @@
+html {
+}
+
+.card {
+  margin-bottom: 20px;
+  flex-basis: 24%;
+  border: 1px solid #000;
+}
+.cardImage {
+  min-width: 325px;
+  border-bottom: 2px solid #000;
+}
+.cardInfo {
+  text-align: left;
+  /* margin: auto; */
+  /* border: 1px solid #000; */
+}
+
+h3 {
+  margin: 0 0 5px 0;
+  font-size: 12px;
+}
+
+td {
+  font-size: 12px;
+}
